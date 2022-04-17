@@ -1,0 +1,28 @@
+:root {
+ --primary-dark: #123962;
+ --primary-light: #fff;
+ --secondary-dark: #1f222c;
+ --secondary-light: #F3F3F3;
+ --accent: #c4ced6;
+ --green: #30e3ca;
+ --scrollBG: #0d0d0e;
+ --padding: 0rem 24rem;
+}
+
+@media (max-width: 1700px) {
+ :root {
+  --padding: 0rem 12rem;
+}
+}
+
+@media (max-width: 1400px) {
+ :root {
+  --padding: 0rem 11rem;
+}
+}
+
+@media (max-width: 900px) {
+ :root {
+  --padding: 0rem 2rem;
+}
+}

@@ -1,0 +1,10 @@
+.overlay {
+	width: 100vw;
+	height: 80vh;
+	position: absolute;
+	left: 0;
+	top: 125px;
+	opacity: 0.2;
+	filter: blur(6px);
+	z-index: 4;
+}
