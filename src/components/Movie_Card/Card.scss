@@ -1,0 +1,31 @@
+.movies-card {
+	max-width: 100%;
+	padding: 1rem 0;
+	.movies-title {
+		margin: 1rem 0;
+		font-weight: bold;
+	}
+	.img-container {
+		background-color: rgb(7, 7, 7);
+		height: 300px;
+		display: flex;
+		justify-content: center;
+		.movies-img-null {
+			max-height: 320px;
+			max-width: 200px;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			transition: all 0.17s ease-in-out;
+		}
+	}
+	.movies-img {
+		max-height: 320px;
+		max-width: 200px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		transition: all 0.17s ease-in-out;
+
+		&:hover {
+			transform: translate(0, -10px);
+			cursor: pointer;
+		}
+	}
+}

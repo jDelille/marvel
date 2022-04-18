@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { actionCreators } from '../state';
+import { actionCreators } from '../../state';
 import { Link } from 'react-router-dom';
 
-import '../styles/Pages.scss';
-import Related from '../components/Related/Related';
+import '../../styles/Pages.scss';
+import Related from '../../components/Related/Related';
 
 function Character() {
 	const [details, setDetails] = useState([]);
@@ -36,8 +36,6 @@ function Character() {
 			});
 		setLoading(false);
 	}, []);
-
-	console.log(related);
 
 	// import dispatch
 	const dispatch = useDispatch();

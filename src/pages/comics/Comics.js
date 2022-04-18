@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Card from '../components/Comic_Card/Card';
-import '../styles/Pages.scss';
+import Card from '../../components/Comic_Card/Card';
+import '../../styles/Pages.scss';
 const Comics = () => {
 	const [data, setData] = useState([]);
 
@@ -20,8 +20,6 @@ const Comics = () => {
 				setData(data.data.results);
 			});
 	}, [date]);
-
-	console.log(data);
 
 	return (
 		<div className='comic-container page'>

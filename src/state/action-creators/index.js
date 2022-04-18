@@ -67,3 +67,13 @@ export const updatedRelatedComics = (amount) => {
 		});
 	};
 };
+
+// change id for selected movie
+export const updateMovieId = (amount) => {
+	return (dispatch) => {
+		dispatch({
+			type: 'movieId',
+			payload: amount,
+		});
+	};
+};

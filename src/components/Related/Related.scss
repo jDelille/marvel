@@ -8,6 +8,7 @@
 	padding: var(--padding);
 	flex-direction: column;
 	color: white;
+
 	h1 {
 		position: relative;
 		top: 280px;
@@ -23,6 +24,9 @@
 		top: 300px;
 		overflow-x: scroll;
 		gap: 1rem;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 		.comic-img-sm {
 			max-height: 230px;
 			cursor: pointer;

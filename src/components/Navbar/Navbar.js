@@ -28,6 +28,8 @@ const Navbar = () => {
 					<Link to='/'>Home</Link>
 					<Link to='/comics'> Comics </Link>
 					<Link to='/characters'> Characters </Link>
+					<Link to='/movies'> Movies </Link>
+					<Link to='/shows'> Shows </Link>
 				</div>
 			</div>
 		</>

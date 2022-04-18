@@ -29,6 +29,7 @@ const Related = () => {
 		actionCreators,
 		dispatch
 	);
+
 	return (
 		<div className='related'>
 			<h1> Related Comics </h1>

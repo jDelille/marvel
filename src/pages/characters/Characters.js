@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Alphabet from '../components/Alphabet/Alphabet';
+import Alphabet from '../../components/Alphabet/Alphabet';
 import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { actionCreators } from '../state';
+import { actionCreators } from '../../state';
 import { Link } from 'react-router-dom';
-import '../styles/Pages.scss';
+import '../../styles/Pages.scss';
 
 const Characters = () => {
 	const [data, setData] = useState([]);
