@@ -24,6 +24,8 @@ function Details() {
 			});
 	}, [comicId]);
 
+	console.log(comicId);
+
 	// layout will go...
 	// name
 	// creators
@@ -111,7 +113,7 @@ function Details() {
 
 											<h2>Upc: {item.upc}</h2>
 										</div>
-										<div className='right'>
+										<div className='right-side'>
 											<h1> Digital Issue </h1>
 											{item?.prices[1]?.type === 'digitalPurchasePrice' &&
 											item.prices[1].price ? (

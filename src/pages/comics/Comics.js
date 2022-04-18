@@ -21,6 +21,8 @@ const Comics = () => {
 			});
 	}, [date]);
 
+	console.log(data);
+
 	return (
 		<div className='comic-container page'>
 			{data.map((item) => {

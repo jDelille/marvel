@@ -14,14 +14,14 @@ const Related = () => {
 	const comicId = useSelector((state) => state.comicId);
 
 	useEffect(() => {
-		fetch(
-			`${charURL}/comics?dateRange=1990-01-01%2C2006-01-02&ts=${ts}&apikey=${apiKey}&hash=${hash}`
-		)
+		fetch(`${charURL}?ts=${ts}&apikey=${apiKey}&hash=${hash}`)
 			.then((res) => res.json())
 			.then((data) => {
 				setRelated(data.data.results);
 			});
 	}, [charURL, comicId]);
+
+	console.log(related);
 	// import dispatch
 	const dispatch = useDispatch();
 	// import from action-creators.
@@ -32,7 +32,7 @@ const Related = () => {
 
 	return (
 		<div className='related'>
-			<h1> Related Comics </h1>
+			<h1> Featured Characters </h1>
 			<div className='show-related-comics'>
 				{related.map((item) => {
 					if (
@@ -40,15 +40,18 @@ const Related = () => {
 						'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available'
 					)
 						return (
-							<img
-								onClick={() => {
-									changeComicId(item.id);
-									changeCharURL(item?.characters?.items[0]?.resourceURI);
-								}}
-								className='comic-img-sm'
-								src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
-								alt={item.title}
-							/>
+							<div className='related-card'>
+								<img
+									onClick={() => {
+										changeComicId(item.id);
+										changeCharURL(item?.characters?.items[0]?.resourceURI);
+									}}
+									className='comic-img-sm'
+									src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
+									alt={item.title}
+								/>
+								<p>{item.name}</p>
+							</div>
 						);
 				})}
 			</div>

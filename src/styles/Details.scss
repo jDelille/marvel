@@ -90,6 +90,9 @@
 				}
 			}
 			.characters {
+				display: flex;
+				flex-wrap: wrap;
+				height: 100px;
 				p {
 					font-size: 1.2rem;
 				}
@@ -104,7 +107,6 @@
 		background-color: #e1e1e1;
 		width: 100%;
 		margin: 0 auto;
-		height: 250px;
 		position: absolute;
 		bottom: -100px;
 		left: 0;
@@ -117,6 +119,7 @@
 			width: 30.75%;
 			height: 100%;
 			padding: 2rem;
+
 			h1 {
 				font-size: 1.4rem;
 				text-transform: uppercase;
@@ -127,8 +130,8 @@
 				margin-bottom: 0.5rem;
 			}
 		}
-		.right {
-			height: 100%;
+		.right-side {
+			height: auto;
 			width: 60%;
 			padding: 2rem 4rem;
 			a {
@@ -142,6 +145,7 @@
 			h2 {
 				font-size: 1.3rem;
 				margin-bottom: 0.5rem;
+				margin-top: 1rem;
 			}
 		}
 	}

@@ -10,7 +10,7 @@ import Related from '../../components/Related/Related';
 function Character() {
 	const [details, setDetails] = useState([]);
 	const [related, setRelated] = useState([]);
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(false);
 
 	let ts = process.env.REACT_APP_TIMESTAMP;
 	let apiKey = process.env.REACT_APP_API_KEY;
@@ -18,6 +18,7 @@ function Character() {
 
 	let char = useSelector((state) => state.char);
 	const relatedComics = useSelector((state) => state.relatedComics);
+
 
 	useEffect(() => {
 		fetch(
@@ -34,24 +35,23 @@ function Character() {
 			.then((data) => {
 				setRelated(data.data.results);
 			});
-		setLoading(false);
 	}, []);
 
 	// import dispatch
 	const dispatch = useDispatch();
 	// import from action-creators.
-	const { changeComicId, changeCharURL } = bindActionCreators(
-		actionCreators,
-		dispatch
-	);
+	const { plusCharId } = bindActionCreators(actionCreators, dispatch);
 
 	return (
 		<>
 			<div className='details page'>
-				<Link to='/characters' className='back-btn'>
-					Back
-				</Link>
-				<div className='selected-character-page'>
+				<div className='control-bar'>
+					<Link to='/characters' className='back-btn'>
+						Back
+					</Link>
+					<div className='switch-controls'></div>
+				</div>
+				<div className='character-content'>
 					{details.map((character) => {
 						// character img
 						const { path, extension } = character.thumbnail;

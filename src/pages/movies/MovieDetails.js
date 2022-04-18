@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { actionCreators } from '../../state';
 import MovieOverlay from '../../components/Overlay/MovieOverlay';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const MovieDetails = () => {
 	const [details, setDetails] = useState([]);
-	const movieId = useSelector((state) => state.movieId);
+	let movieId = useSelector((state) => state.movieId);
+
+	// import dispatch
+	const dispatch = useDispatch();
+	// import from action-creators.
+	const { updateMovieId } = bindActionCreators(actionCreators, dispatch);
 
 	useEffect(() => {
 		fetch(`https://mcuapi.herokuapp.com/api/v1/movies/${movieId}`)
@@ -14,9 +21,7 @@ const MovieDetails = () => {
 			.then((data) => {
 				setDetails(data);
 			});
-	}, []);
-
-	console.log(details);
+	}, [movieId]);
 
 	return (
 		<>
@@ -26,8 +31,8 @@ const MovieDetails = () => {
 						Back
 					</Link>
 					<div className='switch-controls'>
-						<p> Previous </p>
-						<p> Next </p>
+						<p onClick={() => updateMovieId(movieId - 1)}> Previous </p>
+						<p onClick={() => updateMovieId(movieId + 1)}> Next </p>
 					</div>
 				</div>
 				<MovieOverlay details={details} />
@@ -85,7 +90,9 @@ const MovieDetails = () => {
 						<p className='value'>{details.chronology}</p>
 					</div>
 				</div>
+
 				<div className='related-movies'>
+					<h1> Related Movies </h1>
 					<div className='img-container'>
 						{details?.related_movies?.map((item, index) => {
 							return (

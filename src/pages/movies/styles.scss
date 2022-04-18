@@ -18,6 +18,18 @@
 		align-items: center;
 		left: 0;
 		justify-content: space-between;
+		.switch-controls {
+			display: flex;
+			gap: 1rem;
+			p {
+				cursor: pointer;
+				&:hover {
+					color: #e62429;
+					font-weight: bold;
+					text-decoration: underline;
+				}
+			}
+		}
 		a {
 			color: white;
 			text-decoration: none;
@@ -108,9 +120,17 @@
 	}
 	.related-movies {
 		height: 100%;
-
-		padding: 2rem 4rem;
+		padding: var(--padding);
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		justify-content: center;
+		color: white;
+		h1 {
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			margin-top: 1rem;
+			margin-bottom: 2rem;
+		}
 		.img-container {
 			gap: 1rem;
 			display: flex;
@@ -124,10 +144,6 @@
 			max-width: 200px;
 			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 			transition: all 0.17s ease-in-out;
-			&:hover {
-				transform: translate(0, -10px);
-				cursor: pointer;
-			}
 		}
 	}
 }
