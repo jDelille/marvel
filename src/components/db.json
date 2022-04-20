@@ -1,0 +1,728 @@
+{
+ "movies": [
+  {
+   "id": 1,
+   "title": "Iron Man",
+   "description": "2008's Iron Man tells the story of Tony Stark, a billionaire industrialist and genius inventor who is kidnapped and forced to build a devastating weapon. Instead, using his intelligence and ingenuity, Tony builds a high-tech suit of armor and escapes captivity. When he uncovers a nefarious plot with global implications, he dons his powerful armor and vows to protect the world as Iron Man.",
+   "date": "May 2, 2008",
+   "duration": 126,
+   "characters": [
+    "Iron Man",
+    "War Machine"
+   ],
+   "director": "Jon Favreau",
+   "trailer": "https://www.youtube.com/watch?v=8ugaeA-nMTc",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman_lob_crd_01_4.jpg",
+   "phase": 1,
+   "saga": "The Infinity Saga",
+   "chronology": 3,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=2oKUsna2yvA"
+   ]
+  },
+  {
+   "id": 2,
+   "title": "Iron Man 2",
+   "description": "With the world now aware that he is Iron Man, billionaire inventor Tony Stark faces pressure from all sides to share his technology with the military. He is reluctant to divulge the secrets of his armored suit, fearing the information will fall into the wrong hands. With Pepper Potts and 'Rhodey' Rhodes by his side, Tony must forge new alliances and confront a powerful new enemy.",
+   "date": "May 7, 2010",
+   "duration": 124,
+   "cast": [
+    "Iron Man",
+    "War Machine",
+    "Black Widow"
+   ],
+   "director": "Jon Favreau",
+   "trailer": "https://www.youtube.com/watch?v=qsRZghNciIo",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman2_lob_crd_01_4.jpg",
+   "phase": 1,
+   "saga": "The Infinity Saga",
+   "chronology": 4,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=V3ex_iqmYJA"
+   ]
+  },
+  {
+   "id": 3,
+   "title": "Thor",
+   "description": "As the son of Odin, king of the Norse gods, Thor will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods' enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment, Odin banishes Thor to Earth. While Loki, Thor's brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.",
+   "date": "May 6, 2011",
+   "duration": 115,
+   "cast": [
+    "Thor",
+    "Odin",
+    "Heimdall",
+    "Loki",
+    "Doctor Erik Selvig",
+    "Hawkeye"
+   ],
+   "director": "Kenneth Branagh",
+   "trailer": "https://www.youtube.com/watch?v=JOddp-nlNvQ",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/thor_lob_crd_01_1.jpg",
+   "phase": 1,
+   "saga": "The Infinity Saga",
+   "chronology": 6,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=i_lxhtJfwDs"
+   ]
+  },
+  {
+   "id": 4,
+   "title": "Captain America: The First Avenger",
+   "description": "Marvel's 'Captain America: The First Avenger' focuses on the early days of the Marvel Universe when Steve Rogers volunteers to participate in an experimental program that turns him into the Super Soldier known as Captain America.",
+   "date": "July 22, 2011",
+   "duration": 124,
+   "cast": [
+    "Captain America",
+    "Winter Soldier"
+   ],
+   "director": "Joe Johnston",
+   "trailer": "https://www.youtube.com/watch?v=JerVrbLldXw",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainamericathefirstavenger_lob_crd_01_0.jpg",
+   "phase": 1,
+   "saga": "The Infinity Saga",
+   "chronology": 1,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=QY8Ni8NLVqc"
+   ]
+  },
+  {
+   "id": 5,
+   "title": "Marvel's The Avengers",
+   "description": "Marvel Studios presents in association with Paramount Pictures 'Marvel's The Avengers'--the super hero team up of a lifetime, featuring iconic Marvel super heroes Iron Man, the Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When an unexpected enemy emerges that threatens global safety and security, Nick Fury, Director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins.",
+   "date": "May 4, 2012",
+   "duration": 143,
+   "cast": [
+    "Iron Man",
+    "Captain America",
+    "Hulk",
+    "Hawkeye",
+    "Thor",
+    "Black Widow"
+   ],
+   "director": "Joss Whedon",
+   "trailer": "https://www.youtube.com/watch?v=eOrNdBpGMv8",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/theavengers_lob_crd_03_0.jpg",
+   "phase": 1,
+   "saga": "The Infinity Saga",
+   "chronology": 7,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=Yx2SSzWXG7U"
+   ]
+  },
+  {
+   "id": 6,
+   "title": "Iron Man 3",
+   "description": "Marvel's 'Iron Man 3' pits brash-but-brilliant industrialist Tony Stark/Iron Man against an enemy whose reach knows no bounds. When Stark finds his personal world destroyed at his enemy's hands, he embarks on a harrowing quest to find those responsible. This journey, at every turn, will test his mettle. With his back against the wall, Stark is left to survive by his own devices, relying on his ingenuity and instincts to protect those closest to him. As he fights his way back, Stark discovers the answer to the question that has secretly haunted him: does the man make the suit or does the suit make the man",
+   "date": "May 3, 2013",
+   "duration": 130,
+   "cast": [
+    "Iron Man",
+    "War Machine",
+    "Hulk"
+   ],
+   "director": "Shane Black",
+   "trailer": "https://www.youtube.com/watch?v=YLorLVa95Xo",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman3_lob_crd_01_11.jpg",
+   "phase": 2,
+   "saga": "The Infinity Saga",
+   "chronology": 8,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=DhyIWcWkScg"
+   ]
+  },
+  {
+   "id": 7,
+   "title": "Thor: The Dark World",
+   "description": "In the aftermath of Marvel's 'Thor' and 'Marvel's The Avengers,' Thor fights to restore order across the cosmos...but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+   "date": "November 8, 2013",
+   "duration": 112,
+   "cast": [
+    "Thor",
+    "Heimdall",
+    "Loki",
+    "Odin",
+    "The Collector",
+    "Doctor Erik Selvig"
+   ],
+   "director": "Alan Taylor",
+   "trailer": "https://www.youtube.com/watch?v=npvJ9FTgZbM",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorthedarkworld_lob_crd_02.jpg",
+   "phase": 2,
+   "saga": "The Infinity Saga",
+   "chronology": 9,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=K1imOiVCgYM"
+   ]
+  },
+  {
+   "id": 8,
+   "title": "Captain America: The Winter Soldier",
+   "description": "After the cataclysmic events in New York with The Avengers, Marvel's 'Captain America: The Winter Soldier,' finds Steve Rogers, aka Captain America, living quietly in Washington, D.C. and trying to adjust to the modern world. But when a S.H.I.E.L.D. colleague comes under attack, Steve becomes embroiled in a web of intrigue that threatens to put the world at risk. Joining forces with the Black Widow, Captain America struggles to expose the ever-widening conspiracy while fighting off professional assassins sent to silence him at every turn. When the full scope of the villainous plot is revealed, Captain America and the Black Widow enlist the help of a new ally, the Falcon. However, they soon find themselves up against an unexpected and formidable enemy--the Winter Soldier.",
+   "date": "April 4, 2014",
+   "duration": 136,
+   "cast": [
+    "Captain America",
+    "Winter Soldier",
+    "Black Widow",
+    "The Falcon",
+    "Wanda Maximoff"
+   ],
+   "director": "Anthony Russo",
+   "trailer": "https://www.youtube.com/watch?v=7SlILk2WMTI",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainamericathewintersoldier_lob_crd_01_2.jpg",
+   "phase": 2,
+   "saga": "The Infinity Saga",
+   "chronology": 10,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=32Qh2zXbROA"
+   ]
+  },
+  {
+   "id": 9,
+   "title": "Guardians of the Galaxy",
+   "description": "An action-packed, epic space adventure, Marvel's 'Guardians of the Galaxy,' expands the Marvel Cinematic Universe into the cosmos, where brash adventurer Peter Quill finds himself the object of an unrelenting bounty hunt after stealing a mysterious orb coveted by Ronan, a powerful villain with ambitions that threaten the entire universe. To evade the ever-persistent Ronan, Quill is forced into an uneasy truce with a quartet of disparate misfits--Rocket, a gun-toting raccoon; Groot, a tree-like humanoid; the deadly and enigmatic Gamora; and the revenge-driven Drax the Destroyer. But when Quill discovers the true power of the orb and the menace it poses to the cosmos, he must do his best to rally his ragtag rivals for a last, desperate stand--with the galaxy's fate in the balance.",
+   "date": "August 1, 2014",
+   "duration": 121,
+   "cast": [
+    "Star-Lord",
+    "Gamora",
+    "Rocket",
+    "Groot",
+    "Drax",
+    "Yondu",
+    "Nebula",
+    "The Collector"
+   ],
+   "director": "James Gunn",
+   "trailer": "https://www.youtube.com/watch?v=d96cjJhvlMA",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardiansofthegalaxy_lob_crd_03_0.jpg",
+   "phase": 2,
+   "saga": "The Infinity Saga",
+   "chronology": 11,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=x0tDDwOKInw"
+   ]
+  },
+  {
+   "id": 10,
+   "title": "Avengers: Age of Ultron",
+   "description": "Marvel Studios presents “Avengers: Age of Ultron,” the epic follow-up to the biggest Super Hero movie of all time. When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes, including Iron Man, Captain America, Thor, The Incredible Hulk, Black Widow and Hawkeye, are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to the Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.",
+   "date": "May 1, 2015",
+   "duration": 141,
+   "cast": [
+    "Iron Man",
+    "Thor",
+    "Hulk",
+    "Captain America",
+    "Black Widow",
+    "Ultron",
+    "Hawkeye",
+    "War Machine",
+    "The Falcon",
+    "Wanda Maximoff",
+    "Doctor Erik Selvig",
+    "Heimdall",
+    "Ulysses Klaue",
+    "Thanos"
+   ],
+   "director": "Joss Whedon",
+   "trailer": "https://www.youtube.com/watch?v=tmeOjFno6Do",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersageofultron_lob_crd_03_0.jpg",
+   "phase": 2,
+   "saga": "The Infinity Saga",
+   "chronology": 13,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=oNwRGhLmE8U"
+   ]
+  },
+  {
+   "id": 11,
+   "title": "Ant-Man",
+   "description": "The next evolution of the Marvel Cinematic Universe brings a founding member of The Avengers to the big screen for the first time with Marvel Studios' 'Ant-Man.' Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
+   "date": "July 17, 2015",
+   "duration": 117,
+   "cast": [
+    "Ant-Man",
+    "Hank Pym",
+    "The Wasp"
+   ],
+   "director": "Peyton Reed",
+   "trailer": "https://www.youtube.com/watch?v=pWdKf3MneyI",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ant-man_lob_crd_01_9.jpg",
+   "phase": 2,
+   "saga": "The Infinity Saga",
+   "chronology": 14,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=VT0x4VczRJA"
+   ]
+  },
+  {
+   "id": 12,
+   "title": "Captain America Civil War",
+   "description": "Steve Rogers leads the newly formed team of Avengers in their continued efforts to safeguard humanity. But after another incident involving the Avengers results in collateral damage, political pressure mounts to install a system of accountability, headed by a governing body to oversee and direct the team. The new status quo fractures the Avengers, resulting in two camps—one led by Steve Rogers and his desire for the Avengers to remain free to defend humanity without government interference, and the other following Tony Stark’s surprising decision to support government oversight and accountability.",
+   "date": "May 6, 2016",
+   "duration": 147,
+   "cast": [
+    "Captain America",
+    "Iron Man",
+    "Winter Soldier",
+    "Hawkeye",
+    "War Machine",
+    "Black Widow",
+    "Spider-Man",
+    "The Falcon",
+    "Black Panther",
+    "Vision",
+    "Wanda Maximoff"
+   ],
+   "director": "Anthony Russo",
+   "trailer": "https://www.youtube.com/watch?v=FkTybqcX-Yo",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainamericacivilwar_lob_crd_01_10.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 15,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=OwdjSc97VdI"
+   ]
+  },
+  {
+   "id": 13,
+   "title": "Doctor Strange",
+   "description": "From Marvel Studios comes “Doctor Strange,” the story of world-famous neurosurgeon Dr. Stephen Strange whose life changes forever after a horrific car accident robs him of the use of his hands. When traditional medicine fails him, he is forced to look for healing, and hope, in an unlikely place—a mysterious enclave known as Kamar-Taj. Before long Strange—armed with newly acquired magical powers—is forced to choose whether to return to his life of fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence.",
+   "date": "November 4, 2016",
+   "duration": 115,
+   "cast": [
+    "Doctor Strange",
+    "Wong",
+    "Dormammu",
+    "Thor"
+   ],
+   "director": "Scott Derrickson",
+   "trailer": "https://www.youtube.com/watch?v=h7gvFravm4A",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/doctorstrange_lob_crd_01_7.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 19,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=KiCwBM1wxmY"
+   ]
+  },
+  {
+   "id": 14,
+   "title": "Guardians of the Galaxy Vol. 2",
+   "description": "Set to the backdrop of ‘Awesome Mixtape #2,’ Marvel’s Guardians of the Galaxy Vol. 2 continues the team’s adventures as they traverse the outer reaches of the cosmos. The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill’s true parentage. Old foes become new allies and fan-favorite characters from the classic comics will come to our heroes’ aid as the Marvel cinematic universe continues to expand.",
+   "date": "May 5, 2017",
+   "duration": 136,
+   "cast": [
+    "Star-Lord",
+    "Gamora",
+    "Rocket",
+    "Groot",
+    "Drax",
+    "Yondu",
+    "Mantis",
+    "Nebula",
+    "Ego"
+   ],
+   "director": "James Gunn",
+   "trailer": "https://www.youtube.com/watch?v=wUn05hdkhjM",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardiansofthegalaxyvol.2_lob_crd_01_0.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 12,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=pgCFEINIvQk"
+   ]
+  },
+  {
+   "id": 15,
+   "title": "Spider-Man: Homecomming",
+   "description": "A young Peter Parker/Spider-Man (Tom Holland), who made his sensational debut in Captain America: Civil War, begins to navigate his newfound identity as the web-slinging super hero in Spider-Man: Homecoming. Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May (Marisa Tomei), under the watchful eye of his new mentor Tony Stark (Robert Downey, Jr.). Peter tries to fall back into his normal daily routine – distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man – but when the Vulture (Michael Keaton) emerges as a new villain, everything that Peter holds most important will be threatened.",
+   "date": "July 7, 2017",
+   "duration": 133,
+   "cast": [
+    "Spider-Man",
+    "Iron Man",
+    "Vulture",
+    "Shocker",
+    "Captain America"
+   ],
+   "director": "Jon Watts",
+   "trailer": "https://www.youtube.com/watch?v=rk-dF1lIbIg",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-manhomecoming_lob_crd_01_4.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 17,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=zlDaC_85j2U"
+   ]
+  },
+  {
+   "id": 16,
+   "title": "Thor Ragnarok",
+   "description": "Thor is imprisoned on the other side of the universe without his mighty hammer and finds himself in a race against time to get back to Asgard to stop Ragnarok—the destruction of his homeworld and the end of Asgardian civilization—at the hands of an all-powerful new threat, the ruthless Hela. But first he must survive a deadly gladiatorial contest that pits him against his former ally and fellow Avenger—the Incredible Hulk!",
+   "date": "November 3, 2017",
+   "duration": 130,
+   "cast": [
+    "Thor",
+    "Hulk",
+    "Valkyrie",
+    "Hela",
+    "Heimdall",
+    "Loki",
+    "Surge",
+    "Grandmaster",
+    "Odin",
+    "Doctor Strange"
+   ],
+   "director": "Taika Waititi",
+   "trailer": "https://www.youtube.com/watch?v=ue80QwXMRHg&t=3s",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorragnarok_lob_crd_03_0.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 20,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=4cGU-oPpJgM"
+   ]
+  },
+  {
+   "id": 17,
+   "title": "Black Panther",
+   "description": "Marvel Studios' 'Black Panther' follows T'Challa who, after the death of his father, the King of Wakanda, returns home to the isolated, technologically advanced African nation to succeed to the throne and take his rightful place as king. But when a powerful old enemy reappears, T'Challa's mettle as king - and Black Panther - is tested when he is drawn into a formidable conflict that puts the fate of Wakanda and the entire world at risk. Faced with treachery and danger, the young king must rally his allies and release the full power of Black Panther to defeat his foes and secure the safety of his people and their way of life.",
+   "date": "February 16, 2018",
+   "duration": 134,
+   "cast": [
+    "Black Panther",
+    "Erik Killmonger",
+    "Nakia",
+    "Okoye",
+    "Shuri",
+    "Ulysses Klaue",
+    "Winter Soldier"
+   ],
+   "director": "Ryan Coogler",
+   "trailer": "https://www.youtube.com/watch?v=xjDjIWPwcPU",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackpanther_lob_crd_01_5.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 18,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=e34LLkMi_R8"
+   ]
+  },
+  {
+   "id": 18,
+   "title": "Avengers: Infinity War",
+   "description": "An unprecedented cinematic journey ten years in the making and spanning the entire Marvel Cinematic Universe, Marvel Studios' 'Avengers: Infinity War' brings to the screen the ultimate, deadliest showdown of all time. As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+   "date": "April 27, 2018",
+   "duration": 149,
+   "cast": [
+    "Hulk",
+    "Winter Soldier",
+    "Corvus Glaive",
+    "Doctor Strange",
+    "Drax",
+    "Ebony Maw",
+    "Gamora",
+    "Groot",
+    "Heimdall",
+    "War Machine",
+    "Loki",
+    "Mantis",
+    "Black Widow",
+    "Nebula",
+    "Okoye",
+    "Spider-Man",
+    "Star-Lord",
+    "Rocket",
+    "The Falcon",
+    "Shuri",
+    "Captain America",
+    "Black Panther",
+    "Thanos",
+    "The Collector",
+    "Thor",
+    "Iron Man",
+    "Vision",
+    "Wanda Maximoff",
+    "Wong"
+   ],
+   "director": "Anthony Russo",
+   "trailer": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersinfinitywar_lob_crd_02.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 22,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=DS3k6VLcrM8"
+   ]
+  },
+  {
+   "id": 19,
+   "title": "Ant-Man and the Wasp",
+   "description": "From the Marvel Cinematic Universe comes a new chapter featuring heroes with the astonishing ability to shrink: 'Ant-Man and The Wasp.'. In the aftermath of 'Captain America: Civil War', Scott Lang (Paul Rudd) grapples with the consequences of his choices as both a Super Hero and a father. As he struggles to rebalance his home life with his responsibilities as Ant-Man, he's confronted by Hope van Dyne (Evangeline Lilly) and Dr. Hank Pym (Michael Douglas) with an urgent new mission. Scott must once again put on the suit and learn to fight alongside The Wasp as the team works together to uncover secrets from their past.",
+   "date": "July 6, 2018",
+   "duration": 125,
+   "cast": [
+    "Ant-Man",
+    "The Wasp"
+   ],
+   "director": "Peyton Reed",
+   "trailer": "https://www.youtube.com/watch?v=UUkn-enk2RU",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ant-manthewasp_lob_crd_01_0.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 21,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=vjBh2i6RLpQ"
+   ]
+  },
+  {
+   "id": 20,
+   "title": "Captain Marvel",
+   "description": "Set in the 1990s, Marvel Studios' 'Captain Marvel' is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe that follows the journey of Carol Danvers as she becomes one of the universe's most powerful heroes. While a galactic war between two alien races reaches Earth, Danvers finds herself and a small cadre of allies at the center of the maelstrom.",
+   "date": "March 8, 2019",
+   "duration": 125,
+   "cast": [
+    "Captain Marvel",
+    "Nick Fury",
+    "Yon-Rogg",
+    "Maria Rambeau",
+    "Goose The Cat",
+    "Talos",
+    "Phil Coulson",
+    "Korath",
+    "Ronan"
+   ],
+   "director": "Anna Boden",
+   "trailer": "https://www.youtube.com/watch?v=Z1BCujX3pw8",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainmarvel_lob_crd_06.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 2,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=Y7cfBolKKHI"
+   ]
+  },
+  {
+   "id": 21,
+   "title": "Avengers Endgame",
+   "description": "The grave course of events set in motion by Thanos that wiped out half the universe and fractured the Avengers ranks compels the remaining Avengers to take one final stand in Marvel Studios' grand conclusion to twenty-two films, 'Avengers: Endgame.'",
+   "date": "April 26, 2019",
+   "duration": 182,
+   "cast": [
+    "Hulk",
+    "Winter Soldier",
+    "Corvus Glaive",
+    "Doctor Strange",
+    "Hulk",
+    "Drax",
+    "Ebony Maw",
+    "Gamora",
+    "Groot",
+    "Heimdall",
+    "War Machine",
+    "Loki",
+    "Mantis",
+    "Black Widow",
+    "Nebula",
+    "Okoye",
+    "Spider-Man",
+    "Star-Lord",
+    "Rocket",
+    "The Falcon",
+    "Shuri",
+    "Captain America",
+    "Black Panther",
+    "Thanos",
+    "The Collector",
+    "Thor",
+    "Iron Man",
+    "Vision",
+    "Wanda Maximoff",
+    "Wong",
+    "Captain Marvel"
+   ],
+   "director": "Anthony Russo",
+   "trailer": "https://www.youtube.com/watch?v=TcMBFSGVi1c&t=2s",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersendgame_lob_crd_05.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 23,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=EBD5_86469s"
+   ]
+  },
+  {
+   "id": 22,
+   "title": "Spider-Man: Far From Home",
+   "description": "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever.",
+   "date": "July 2, 2019",
+   "duration": 148,
+   "cast": [
+    "Spider-Man",
+    "Nick Fury"
+   ],
+   "director": "Jon Watts",
+   "trailer": "https://www.youtube.com/watch?v=Nt9L1jCKGnE",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-manfarfromhome_lob_crd_04_0.jpg",
+   "phase": 3,
+   "saga": "The Infinity Saga",
+   "chronology": 24,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=O4k_jUIZNfw"
+   ]
+  },
+  {
+   "id": 23,
+   "title": "Black Widow",
+   "description": "In Marvel Studios’ action-packed spy thriller “Black Widow,” Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+   "date": "July 9, 2021",
+   "duration": 133,
+   "cast": [
+    "Black Widow",
+    "Yelena",
+    "Melina",
+    "Red Guardian",
+    "Taskmaster",
+    "Rick Mason"
+   ],
+   "director": "Cate Shortland",
+   "trailer": "https://www.youtube.com/watch?v=ybji16u608U",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackwidow_lob_crd_06.jpg",
+   "phase": 4,
+   "saga": "The Multiverse Saga",
+   "chronology": 16,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=4ftNsycD2-w"
+   ]
+  },
+  {
+   "id": 24,
+   "title": "Shang-Chi and The Legend of The Ten Rings",
+   "description": "Marvel Studios' 'Shang-Chi and The Legend of The Ten Rings' stars Simu Liu as Shang-Chi, who must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization. The film also stars Tony Leung as Wenwu, Awkwafina as Shang-Chi's friend Katy and Michelle Yeoh as Jiang Nan, as well as Fala Chen, Meng'er Zhang, Florian Munteanu and Ronny Chieng.",
+   "date": "September 3, 2021",
+   "duration": 132,
+   "cast": [
+    "Shang-Chi"
+   ],
+   "director": "Destin Daniel Cretton",
+   "trailer": "https://www.youtube.com/watch?v=8YjFbMbfXaQ",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/shangchi_lob_crd_07.jpg",
+   "phase": 4,
+   "saga": "The Multiverse Saga",
+   "chronology": 25,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=OtQQ5AlhdQs"
+   ]
+  },
+  {
+   "id": 25,
+   "title": "Eternals",
+   "description": "Marvel Studios' Eternals features an exciting new team of Super Heroes in the Marvel Cinematic Universe, ancient aliens who have been living on Earth in secret for thousands of years. Following the events of Avengers: Endgame, an unexpected tragedy forces them out of the shadows to reunite against mankind's most ancient enemy, the Deviants.",
+   "date": "November 5, 2021",
+   "duration": 172,
+   "cast": [
+    "Ajak",
+    "Druig",
+    "Gilgamesh",
+    "Ikaris",
+    "Kingo",
+    "Makkari",
+    "Phastos",
+    "Sersi",
+    "Sprite",
+    "Thena"
+   ],
+   "director": "Chloé Zhao",
+   "trailer": "https://www.youtube.com/watch?v=x_me3xsvDgk",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/eternals_lob_crd_06.jpg",
+   "phase": 4,
+   "saga": "The Multiverse Saga",
+   "chronology": 27,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=mvQNovO_dR8"
+   ]
+  },
+  {
+   "id": 26,
+   "title": "Spider-Man: No Way Home",
+   "description": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+   "date": "December 17, 2021",
+   "duration": 148,
+   "cast": [
+    "Spider-Man",
+    "Green Goblin",
+    "Doc Ock",
+    "Doctor Strange",
+    "Matt Murdock",
+    "Electro",
+    "Wong"
+   ],
+   "director": "Jon Watts",
+   "trailer": "https://www.youtube.com/watch?v=JfVOs4VSpmA",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-mannowayhome_lob_crd_03.jpg",
+   "phase": 4,
+   "saga": "The Multiverse Saga",
+   "chronology": 28,
+   "post_credits": [
+    "https://www.youtube.com/watch?v=6aja1ofSx0M&t=3s"
+   ]
+  },
+  {
+   "id": 27,
+   "title": "Doctor Strange in the Multiverse of Madness",
+   "description": "Marvel Studios' 'Doctor Strange in the Multiverse of Madness'—a thrilling ride through the Multiverse with Doctor Strange, his trusted friend Wong and Wanda Maximoff, aka Scarlet Witch. 'Doctor Strange in the Multiverse of Madness' opens in U.S. theaters on May 6, 2022.",
+   "date": "May 6, 2022",
+   "duration": 126,
+   "cast": [
+    "Doctor Strange",
+    "Wong"
+   ],
+   "director": "Sam Raimi",
+   "trailer": "https://www.youtube.com/watch?v=aWzlQ2N6qqg&t=4s",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg",
+   "phase": 4,
+   "saga": "The Multiverse Saga",
+   "chronology": 29,
+   "post_credits": []
+  },
+  {
+   "id": 28,
+   "title": "Thor: Love and Thunder",
+   "description": "Marvel Studios’ THOR: LOVE AND THUNDER stars Chris Hemsworth, Tessa Thompson, Natalie Portman and Christian Bale. Directed by Taika Waititi. In theaters July 8, 2022.",
+   "date": "July 8, 2022",
+   "duration": 133,
+   "cast": [
+    "Thor",
+    "Lady Thor",
+    "Gorr The God Butcher",
+    "Guardians of the Galaxy"
+   ],
+   "director": "Taika Waititi",
+   "trailer": "https://www.youtube.com/watch?v=rog9HY_uGeo",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorloveandthunder_lob_crd_03.jpg",
+   "phase": 4,
+   "saga": "The Multiverse Saga",
+   "chronology": 30,
+   "post_credits": []
+  },
+  {
+   "id": 29,
+   "title": "Black Panther: Wakanda Forever",
+   "description": "Black Panther: Wakanda Forever is an upcoming American superhero film based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is intended to be the sequel to Black Panther and the 30th film in the Marvel Cinematic",
+   "date": "November 11, 2022",
+   "duration": 133,
+   "cast": [
+    "Black Panther"
+   ],
+   "director": "Ryan Coogler",
+   "trailer": "",
+   "poster_img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackpanther2_lob_crd_02.jpg",
+   "phase": 4,
+   "saga": "The Multiverse Saga",
+   "chronology": 31,
+   "post_credits": []
+  }
+ ]
+}

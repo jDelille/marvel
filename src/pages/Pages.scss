@@ -1,0 +1,18 @@
+@import '../Styles/variables.scss';
+
+.page {
+	padding: var(--padding);
+	.control-bar {
+		height: auto;
+		display: flex;
+		position: relative;
+		width: 100%;
+	}
+}
+.grid-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: var(--grid);
+	gap: 1rem;
+	padding-top: 2rem;
+}

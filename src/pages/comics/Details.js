@@ -24,7 +24,7 @@ function Details() {
 			});
 	}, [comicId]);
 
-	console.log(comicId);
+	console.log(details);
 
 	// layout will go...
 	// name

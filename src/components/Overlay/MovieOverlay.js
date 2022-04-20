@@ -6,7 +6,7 @@ const MovieOverlay = ({ details }) => {
 			<div
 				className='overlay'
 				style={{
-					backgroundImage: `url(${details.cover_url})`,
+					backgroundImage: `url(${details?.poster_img})`,
 					backgroundPosition: '0 -210px',
 					backgroundSize: 'cover',
 					backgroundRepeat: 'no-repeat',
