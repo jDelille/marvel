@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import Related from '../../components/Related/Related';
-import Overlay from '../../components/Overlay/Overlay';
 import { Link } from 'react-router-dom';
-import '../../styles/Details.scss';
-
+import Overlay from '../../Components/Overlay/Overlay';
+import '../../Styles//Details.scss';
 function Details() {
 	const [details, setDetails] = useState([]);
 
@@ -24,6 +22,8 @@ function Details() {
 			});
 	}, [comicId]);
 
+	console.log(comicId);
+
 	console.log(details);
 
 	// layout will go...
@@ -36,7 +36,7 @@ function Details() {
 		<>
 			<div className='details page'>
 				<div className='control-bar'>
-					<Link to='/comics' className='back-btn'>
+					<Link to='/' className='back-btn'>
 						Back
 					</Link>
 					<a href='https://www.marvel.com/' target='_blank' rel='noreferrer'>
@@ -101,43 +101,6 @@ function Details() {
 											</p>
 										</div>
 									)}
-									<div className='comic-info-box'>
-										<div className='left'>
-											<h1> Comic Details </h1>
-											{item.pageCount === 0 ? (
-												<h2>Issue: {item.issueNumber}</h2>
-											) : (
-												<h2>Pages: {item.pageCount}</h2>
-											)}
-											<h2>Price: ${item.prices[0].price}</h2>
-
-											<h2>Upc: {item.upc}</h2>
-										</div>
-										<div className='right-side'>
-											<h1> Digital Issue </h1>
-											{item?.prices[1]?.type === 'digitalPurchasePrice' &&
-											item.prices[1].price ? (
-												<>
-													<h2>Digital Price: ${item.prices[1].price}</h2>
-													{item.urls.map((url) => {
-														if (url.type === 'purchase')
-															return (
-																<>
-																	<a
-																		href={url.url}
-																		target='_blank'
-																		rel='noreferrer'>
-																		<h2> Purchase via the Marvel Store.</h2>
-																	</a>
-																</>
-															);
-													})}
-												</>
-											) : (
-												<></>
-											)}
-										</div>
-									</div>
 								</div>
 							</div>
 						</>
@@ -145,7 +108,7 @@ function Details() {
 				})}
 			</div>
 			{/* SHOW RELATED COMICS */}
-			<Related />
+			{/* <Related /> */}
 		</>
 	);
 }

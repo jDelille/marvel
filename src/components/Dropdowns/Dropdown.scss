@@ -1,15 +1,15 @@
 .dropdown {
-	height: 50px;
+	height: auto;
 	font-size: 0.6rem;
 	display: flex;
 	padding-left: 1rem;
 	width: 240px;
-	border-right: 1px solid lightgoldenrodyellow;
+	flex-direction: column;
 	.active-select {
 		width: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: flex-end;
 		.hero-name-icon {
 			display: flex;
 			gap: 0.5rem;
@@ -31,13 +31,16 @@
 }
 
 .expand {
-	width: 100%;
+	width: 400px;
 	display: flex;
 	flex-direction: column;
 	background-color: rgb(252, 252, 252);
 	height: 400px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	overflow-y: scroll;
+	position: absolute;
+	right: 1rem;
+	bottom: -410px;
 	.option {
 		display: flex;
 		align-items: center;

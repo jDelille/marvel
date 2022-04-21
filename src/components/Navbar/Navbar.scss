@@ -1,30 +1,18 @@
 nav {
 	width: 100%;
-	height: 65px;
+	height: 45px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	.nav-content {
-		background-color: #020202;
+		background-color: #202020;
 		position: absolute;
 		z-index: 9999;
 		width: 100%;
 		height: 100%;
 		display: flex;
 		justify-content: center;
-		.links {
-			color: white;
-			display: flex;
-			gap: 1rem;
-			cursor: pointer;
-			height: 100%;
-			p {
-				height: 100%;
-				display: flex;
-				align-items: center;
-			}
-		}
 	}
 
 	.menu,
@@ -33,7 +21,7 @@ nav {
 		width: 100vw;
 		position: absolute;
 		height: auto;
-		top: 65px;
+		top: 100px;
 		opacity: 1;
 		transition: all 360ms ease-in-out;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -52,6 +40,17 @@ nav {
 			align-items: center;
 			font-weight: bold;
 			padding: 2rem;
+			a,
+			p {
+				color: black;
+				text-decoration: none;
+				&:hover {
+					color: rgb(225, 73, 73);
+				}
+			}
+			.label {
+				color: rgb(225, 73, 73);
+			}
 		}
 		.container {
 			width: 100%;
@@ -60,13 +59,19 @@ nav {
 			flex-direction: column;
 			align-items: center;
 			.title {
+				font-size: 2rem;
 			}
+			.display {
+				flex-direction: row-reverse;
+			}
+			.display-comics,
 			.display {
 				display: flex;
 				width: 50%;
 				gap: 1rem;
 				justify-content: center;
 				padding: 1rem;
+
 				img {
 					width: 140px;
 				}
@@ -79,7 +84,49 @@ nav {
 
 	.hide {
 		opacity: 0;
+		transition-delay: 1s, 250ms;
 		transition: all 360ms ease-in-out;
-		z-index: -1;
+		z-index: -100;
+		visibility: hidden;
+	}
+}
+
+.sub-nav {
+	width: 100%;
+	background-color: #202020;
+	border-top: 1px solid lightgray;
+	color: white;
+	display: flex;
+	justify-content: center;
+	height: 55px;
+	z-index: 9999;
+	.links {
+		color: white;
+		display: flex;
+		gap: 1rem;
+		cursor: pointer;
+		height: 100%;
+		p {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			box-sizing: border-box;
+			position: relative;
+		}
+		.underline {
+			&:after {
+				content: '';
+				height: 3px;
+				background-color: red;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+			}
+		}
+		.no-underline {
+			border: none;
+		}
 	}
 }

@@ -1,7 +1,30 @@
 @import '../Styles/variables.scss';
 
 .page {
+	display: flex;
+	flex-direction: column;
 	padding: var(--padding);
+	padding-top: 2rem;
+	position: relative;
+	z-index: 5000;
+	.title {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 2rem;
+		position: relative;
+		height: auto;
+	}
+	h1 {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+	}
+	.down-arrow {
+		font-size: 1.2rem;
+	}
 	.control-bar {
 		height: auto;
 		display: flex;
@@ -13,6 +36,12 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: var(--grid);
-	gap: 1rem;
+	padding-top: 2rem;
+}
+
+.grid-container-reverse {
+	width: 100%;
+	display: grid;
+	grid-template-columns: var(--grid);
 	padding-top: 2rem;
 }

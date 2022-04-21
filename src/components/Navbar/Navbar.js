@@ -12,11 +12,23 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav>
-			<div className='nav-content'>
-				<div className='logo'></div>
+		<>
+			<nav>
+				<div className='nav-content'>
+					<div className='logo'></div>
+				</div>
+				(
+				<ComicMenu setMenu={setMenu} menu={menu} close={close} />
+				<MovieMenu
+					setMovieMenu={setMovieMenu}
+					movieMenu={movieMenu}
+					close={close}
+				/>
+			</nav>
+			<div className='sub-nav'>
 				<div className='links'>
 					<p
+						className={menu ? 'underline' : 'no-underline'}
 						onMouseOver={() => {
 							close();
 							setMenu(true);
@@ -24,6 +36,7 @@ const Navbar = () => {
 						Comics
 					</p>
 					<p
+						className={movieMenu ? 'underline' : 'no-underline'}
 						onMouseOver={() => {
 							close();
 							setMovieMenu(true);
@@ -32,14 +45,7 @@ const Navbar = () => {
 					</p>
 				</div>
 			</div>
-			(
-			<ComicMenu setMenu={setMenu} menu={menu} close={close} />
-			<MovieMenu
-				setMovieMenu={setMovieMenu}
-				movieMenu={movieMenu}
-				close={close}
-			/>
-		</nav>
+		</>
 	);
 };
 

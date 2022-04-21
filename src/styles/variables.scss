@@ -1,6 +1,6 @@
 :root {
 	--primary-dark: #18406b;
-	--padding: 0 16rem;
+	--padding: 0 22rem;
 	--grid: repeat(5, 1fr);
 }
 
@@ -15,7 +15,7 @@ ul {
 
 @media (max-width: 1700px) {
 	:root {
-		--padding: 0rem 12rem;
+		--padding: 0rem 10rem;
 	}
 }
 
