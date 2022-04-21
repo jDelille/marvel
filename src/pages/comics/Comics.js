@@ -33,7 +33,7 @@ const Comics = () => {
 	return (
 		<div className='page'>
 			<div className='header'>
-				<h1> Comics </h1>
+				<h1> Cocs </h1>
 				<div className='control-bar'>
 					<div className='dropdown control-box'>
 						<YearDropdown setDate={setDate} date={date} />

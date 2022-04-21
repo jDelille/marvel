@@ -48,11 +48,10 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 	let avengers = `/comics?titleStartsWith=Avengers&startYear=${getDate}&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
 	let digital = `/comics?format=digital%20comic&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
 	let infinite = `/comics?format=infinite%20comic&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
+
 	let thor = `/characters/1009664/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
 	let ironman = `/characters/1009368/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
-
 	let moonknight = `/characters/1009452/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
-
 	let strange = `/characters/1009282/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
 
 	return (

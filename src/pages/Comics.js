@@ -33,12 +33,10 @@ const Comics = () => {
 		fetchComics();
 	}, [getComics, getDate]);
 
-	console.log(data);
-
 	return (
 		<div className='page'>
 			<div className='title'>
-				<h1> Comics </h1>
+				<h1> Avengers: Comics </h1>
 				<YearDropdown date={date} />
 			</div>
 
