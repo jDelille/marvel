@@ -14,7 +14,6 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 	// state
 	const [loading, setLoading] = useState(false);
 	const [latest, setLatest] = useState([]);
-	const [date, setDate] = useState(2022);
 
 	// redux
 	const getDate = useSelector((state) => state.getDate);
@@ -22,7 +21,10 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 	// import dispatch
 	const dispatch = useDispatch();
 	// import from action-creators.
-	const { updateComicEndpoint } = bindActionCreators(actionCreators, dispatch);
+	const { updateComicEndpoint, updateCategory } = bindActionCreators(
+		actionCreators,
+		dispatch
+	);
 
 	// get comics from marvel api
 	useEffect(() => {
@@ -61,6 +63,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(latestComics);
+						updateCategory('Latest Comics');
 						close();
 					}}>
 					Latest Comics
@@ -69,6 +72,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(upcommingComics);
+						updateCategory('Upcomming Comics');
 						close();
 					}}>
 					Upcomming Comics
@@ -77,6 +81,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(digital);
+						updateCategory('Digital Issues');
 						close();
 					}}>
 					Digital Issues
@@ -85,6 +90,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(infinite);
+						updateCategory('Infinite Comics');
 						close();
 					}}>
 					Infinite Comics
@@ -93,6 +99,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(avengers);
+						updateCategory('Avengers Comics ');
 						close();
 					}}>
 					Avengers
@@ -112,6 +119,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(ironman);
+						updateCategory('Iron Man Comics');
 						close();
 					}}>
 					Iron Man
@@ -120,6 +128,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(strange);
+						updateCategory('Doctor Strange Comics');
 						close();
 					}}>
 					Doctor Strange
@@ -128,6 +137,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(thor);
+						updateCategory('Thor Comics');
 						close();
 					}}>
 					Thor
@@ -136,6 +146,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(moonknight);
+						updateCategory('MoonKnight Comics ');
 						close();
 					}}>
 					Moonknight

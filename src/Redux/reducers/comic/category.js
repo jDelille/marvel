@@ -1,10 +1,10 @@
-const comicId = (state = 0, action) => {
+const category = (state = '', action) => {
 	switch (action.type) {
-		case 'comicId':
+		case 'category':
 			return (state = action.payload);
 		default:
 			return state;
 	}
 };
 
-export default comicId;
+export default category;

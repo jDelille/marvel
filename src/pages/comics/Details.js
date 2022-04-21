@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Overlay from '../../Components/Overlay/Overlay';
+import { MdOutlineCopyAll } from 'react-icons/md';
 import '../../Styles//Details.scss';
 function Details() {
 	const [details, setDetails] = useState([]);
@@ -11,6 +12,7 @@ function Details() {
 	let hash = process.env.REACT_APP_HASH;
 
 	const comicId = useSelector((state) => state.comicId);
+	const category = useSelector((state) => state.category);
 
 	useEffect(() => {
 		fetch(
@@ -22,22 +24,16 @@ function Details() {
 			});
 	}, [comicId]);
 
-	console.log(comicId);
-
-	console.log(details);
-
-	// layout will go...
-	// name
-	// creators
-	// cover artist or featured characters.
-	// description
+	function copyUPC(text) {
+		navigator.clipboard.writeText(text);
+	}
 
 	return (
 		<>
 			<div className='details page'>
 				<div className='control-bar'>
 					<Link to='/' className='back-btn'>
-						Back
+						Back to {category}
 					</Link>
 					<a href='https://www.marvel.com/' target='_blank' rel='noreferrer'>
 						Go To Marvel.com
@@ -76,21 +72,53 @@ function Details() {
 												if (
 													creator.role === 'penciller' ||
 													creator.role === 'penciler' ||
-													creator.role === 'penciller (cover)'
+													creator.role === 'penciller (cover)' ||
+													creator.role === 'penciler (cover)'
 												)
 													return <p key={item.digital_id}>{creator.name}</p>;
 											})}
 										</div>
 									</div>
 
-									<div className='info'></div>
+									{/* comic extra info */}
+									<h2>
+										Search for this comic online:
+										<span>
+											{item.upc}
+											<MdOutlineCopyAll
+												className='copy-btn'
+												onClick={() => copyUPC(item.upc)}
+											/>
+										</span>
+									</h2>
+
+									{/* comic price */}
+									{item.prices.map((item) => {
+										return <h2>Price: ${item.price} </h2>;
+									})}
+
+									{/* marvel urls */}
+									{/* {item.urls.map((item) => {
+										return (
+											<a href={item.url} target='_blank' rel='noreferrer'>
+												{' '}
+												More Info{' '}
+											</a>
+										);
+									})} */}
+
 									{/* featured characters */}
-									<h2> Featured Characters: </h2>
-									<div className='characters'>
-										{item.characters.items.map((characters) => {
-											return <p>{characters.name}</p>;
-										})}
-									</div>
+									{item.characters.length > 1 && (
+										<>
+											<h2> Featured Characters: </h2>
+											<div className='characters'>
+												{item.characters.items.map((characters) => {
+													return <p>{characters.name}</p>;
+												})}
+											</div>
+										</>
+									)}
+
 									{/* description */}
 									{item.description && (
 										<div className='description'>

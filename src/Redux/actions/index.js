@@ -37,3 +37,13 @@ export const updateDate = (amount) => {
 		});
 	};
 };
+
+// update the category
+export const updateCategory = (amount) => {
+	return (dispatch) => {
+		dispatch({
+			type: 'category',
+			payload: amount,
+		});
+	};
+};

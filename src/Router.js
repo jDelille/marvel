@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Comics from './Pages/Comics';
+import Comics from './Pages/comics/Comics';
 import Details from './Pages/comics/Details';
 import Navbar from './Components/Navbar/Navbar';
 import MovieDetails from './Pages/movies/MovieDetails';
 import Movies from './Pages/movies/Movies';
+import About from './Pages/about/About';
 function RouterDOM() {
 	return (
 		<Router>
 			<Navbar />
-
 			<Routes>
 				<Route path='/' element={<Comics />} />
 			</Routes>
@@ -21,6 +21,9 @@ function RouterDOM() {
 			</Routes>
 			<Routes>
 				<Route path='/movies' element={<Movies />} />
+			</Routes>
+			<Routes>
+				<Route path='/about' element={<About />} />
 			</Routes>
 		</Router>
 	);

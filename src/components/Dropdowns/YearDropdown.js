@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../Redux';
 import './Dropdown.scss';
 
-const YearDropdown = ({ setDate }) => {
+const YearDropdown = ({ date, setDate }) => {
 	// import dispatch
 	const dispatch = useDispatch();
 	// import from action-creators.
@@ -26,13 +26,13 @@ const YearDropdown = ({ setDate }) => {
 		<div className='dropdown' onClick={() => setExpand(!expand)}>
 			<div className='active-select'>
 				<h1>
-					{getDate} <AiFillCaretDown className='down-arrow' />
+					{date} <AiFillCaretDown className='down-arrow' />
 				</h1>
 			</div>
 
 			<div className={expand ? 'expand' : 'shrink'}>
 				{Array.from(new Array(50), (v, i) => (
-					<div className='option' onClick={() => updateDate(year - i)}>
+					<div className='option' onClick={() => changeDate(year - i)}>
 						<p key={i}>{year - i}</p>
 					</div>
 				))}

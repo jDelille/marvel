@@ -1,63 +1,55 @@
-import React, { useEffect, useState } from 'react';
-import Card from '../../components/Comic_Card/Card';
-import '../../styles/Pages.scss';
-import Dropdown from '../../components/Modal/Dropdown';
-import YearDropdown from '../../components/Modal/Year/Dropdown';
+import React, { useState, useEffect } from 'react';
+import Card from '../../Components/Card/Card';
+import axios from 'axios';
+import { useSelector } from 'react-redux';
+import '../Pages.scss';
+import Loading from '../../Components/Loader/Loading';
+
 const Comics = () => {
+	// state
 	const [data, setData] = useState([]);
-	const [date, setDate] = useState(2022);
-	let [limit, setLimit] = useState(100);
-	const [character, setCharacter] = useState(1009165);
+	const [loading, setLoading] = useState(false);
 
-	let ts = process.env.REACT_APP_TIMESTAMP;
-	let apiKey = process.env.REACT_APP_API_KEY;
-	let hash = process.env.REACT_APP_HASH;
+	// redux
+	const getComics = useSelector((state) => state.getComics);
+	const category = useSelector((state) => state.category);
 
+	// get comics from marvel api
 	useEffect(() => {
-		fetch(
-			`http://gateway.marvel.com/v1/public/characters/${character}/comics?startYear=${date}&ts=${ts}&apikey=${apiKey}&hash=${hash}`
-		)
-			.then((res) => res.json())
-			.then((data) => {
-				setData(data?.data.results);
-			});
-	}, [date, character]);
+		const fetchComics = async () => {
+			setLoading(true);
+			try {
+				const response = await axios.get(
+					`http://gateway.marvel.com/v1/public${getComics}`
+				);
+				setData(response.data.data.results);
+			} catch (error) {
+				console.error(error.message);
+			}
+			setTimeout(setLoading(false), 1000);
+		};
+		fetchComics();
+	}, [getComics]);
 
-	const sum = (num) => {
-		let num1 = limit;
-		let num2 = num;
-		let sum = num1 + num2;
-		setLimit(sum);
-	};
+	console.log(data);
 
 	return (
 		<div className='page'>
-			<div className='header'>
-				<h1> Cocs </h1>
-				<div className='control-bar'>
-					<div className='dropdown control-box'>
-						<YearDropdown setDate={setDate} date={date} />
-					</div>
-					<div className='dropdown control-box'>
-						<Dropdown setCharacter={setCharacter} />
-					</div>
-
-					{/* <div className='sort control-box'>
-						<p>Sort</p>
-					</div> */}
-				</div>
+			<div className='title'>
+				<h1> {category}</h1>
 			</div>
-			<div className='comic-container'>
-				{data.map((item) => {
-					if (
-						item.thumbnail.path !==
-						'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available'
-					)
-						return <Card comic={item} key={item.id} />;
-				})}
-			</div>
-			<div className='view-more'>
-				<p onClick={() => sum(25)}>More</p>
+			<div className='grid-container'>
+				{loading ? (
+					<Loading loading={loading} />
+				) : (
+					data.map((item) => {
+						if (
+							item.thumbnail.path !==
+							'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available'
+						)
+							return <Card data={item} />;
+					})
+				)}
 			</div>
 		</div>
 	);
