@@ -1,7 +1,10 @@
 :root {
-	--primary-dark: #18406b;
+	--primary-dark: #151515;
+	--marvel-red: #ec1d24;
 	--padding: 0 22rem;
 	--grid: repeat(5, 1fr);
+	--card-img: 330px;
+	--nav-transition: all 200ms ease-in-out;
 }
 
 ul {
@@ -28,7 +31,8 @@ ul {
 
 @media (max-width: 900px) {
 	:root {
-		--padding: 0rem 2rem;
-		--grid: repeat(3, 1fr);
+		--padding: 0rem 1rem;
+		--grid: repeat(2, 1fr);
+		--card-img: 230px;
 	}
 }

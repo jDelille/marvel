@@ -35,9 +35,7 @@ const Comics = () => {
 
 	return (
 		<div className='page'>
-			<div className='title'>
-				<h1> {category}</h1>
-			</div>
+			<div className='title'>{!loading && <h1> {category}: Comics</h1>}</div>
 			<div className='grid-container'>
 				{loading ? (
 					<Loading loading={loading} />

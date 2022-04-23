@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../Redux';
 import './Card.scss';
 
 const Card = ({ data, close }) => {
-	
 	// import dispatch
 	const dispatch = useDispatch();
 	// import from action-creators.
@@ -26,7 +25,7 @@ const Card = ({ data, close }) => {
 				/>
 			</Link>
 
-			<p>{data.title}</p>
+			<p className='comic-title'>{data.title}</p>
 		</div>
 	);
 };

@@ -109,7 +109,8 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 				<h1 className='title'> Latest Comics </h1>
 				<div className='display-comics'>
 					{latest.map((item, index) => {
-						if (index <= 5) return <Card data={item} close={close} />;
+						if (index <= 5)
+							return <Card data={item} close={close} className='latest-img' />;
 					})}
 				</div>
 			</div>
@@ -119,7 +120,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(ironman);
-						updateCategory('Iron Man Comics');
+						updateCategory('Iron Man');
 						close();
 					}}>
 					Iron Man
@@ -128,7 +129,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(strange);
-						updateCategory('Doctor Strange Comics');
+						updateCategory('Doctor Strange');
 						close();
 					}}>
 					Doctor Strange
@@ -137,7 +138,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(thor);
-						updateCategory('Thor Comics');
+						updateCategory('Thor');
 						close();
 					}}>
 					Thor
@@ -146,10 +147,10 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 					to='/'
 					onClick={() => {
 						updateComicEndpoint(moonknight);
-						updateCategory('MoonKnight Comics ');
+						updateCategory('Moon Knight');
 						close();
 					}}>
-					Moonknight
+					Moon Knight
 				</Link>
 			</div>
 		</div>

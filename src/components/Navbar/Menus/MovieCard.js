@@ -12,7 +12,7 @@ const MovieCard = ({ data, close }) => {
 	const { updateMovieId } = bindActionCreators(actionCreators, dispatch);
 
 	return (
-		<div className='card'>
+		<div className='movie-card'>
 			<Link to='/movie_details'>
 				<img
 					className='movie-img'

@@ -3,7 +3,6 @@
 	height: 100vh;
 	background-color: #202020;
 	padding-top: 2rem;
-	display: flex;
 	flex-direction: column;
 	display: flex;
 	align-items: center;
@@ -32,9 +31,13 @@
 			height: 100%;
 			display: flex;
 			align-items: center;
-			padding: 0 1rem;
+			.left-arrow {
+				color: var(--marvel-red);
+				font-size: 1.6rem;
+				margin-right: 0.5rem;
+			}
 			&:hover {
-				background-color: #f33339;
+				// background-color: #f33339;
 				color: white;
 			}
 		}
@@ -58,6 +61,9 @@
 			position: relative;
 			.comic-img-lg {
 				max-width: 350px;
+			}
+			.mobile {
+				display: none;
 			}
 		}
 		.right {
@@ -106,6 +112,61 @@
 					p {
 						font-size: 1.2rem;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.details {
+		height: auto;
+		padding: 0 1rem;
+		.comic-content {
+			flex-direction: column;
+			justify-content: space-between;
+			.right {
+				padding: 0;
+				margin: 0;
+				height: 100vh;
+				width: 100%;
+				margin-top: 2rem;
+				.published {
+					h1 {
+						font-size: 1rem;
+					}
+				}
+				.description {
+					margin: 0;
+				}
+				.desktop {
+					display: none;
+				}
+				.info,
+				h2 {
+					display: none;
+					.writer {
+						color: red;
+					}
+				}
+			}
+			.left {
+				.mobile {
+					display: flex;
+				}
+				.title {
+					width: 100vw;
+					left: 0;
+					position: relative;
+
+					h1 {
+						font-size: 1.4rem;
+						color: white;
+						text-transform: none;
+					}
+				}
+				.comic-img-lg {
+					margin-top: 1rem;
 				}
 			}
 		}

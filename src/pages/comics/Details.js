@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Overlay from '../../Components/Overlay/Overlay';
+import { AiOutlineLeft } from 'react-icons/ai';
+import moment from 'moment';
 import { MdOutlineCopyAll } from 'react-icons/md';
 import '../../Styles//Details.scss';
 function Details() {
@@ -28,12 +30,15 @@ function Details() {
 		navigator.clipboard.writeText(text);
 	}
 
+	console.log(details);
+
 	return (
 		<>
 			<div className='details page'>
 				<div className='control-bar'>
 					<Link to='/' className='back-btn'>
-						Back to {category}
+						<AiOutlineLeft className='left-arrow' />
+						{category}
 					</Link>
 					<a href='https://www.marvel.com/' target='_blank' rel='noreferrer'>
 						Go To Marvel.com
@@ -46,6 +51,10 @@ function Details() {
 						<>
 							<div className='comic-content' key={item.id}>
 								<div className='left'>
+									{/* show name on mobile */}
+									<div className='title mobile'>
+										<h1> {item.title} </h1>
+									</div>
 									<img
 										className='comic-img-lg'
 										src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
@@ -53,8 +62,8 @@ function Details() {
 									/>
 								</div>
 								<div className='right'>
-									{/* name */}
-									<div className='title'>
+									{/* hide name on desktop */}
+									<div className='title desktop'>
 										<h1> {item.title} </h1>
 									</div>
 									{/* creators */}
@@ -118,6 +127,12 @@ function Details() {
 											</div>
 										</>
 									)}
+
+									{/* show published date on mobile */}
+									<div className='published'>
+										<h1>Published</h1>
+										<p>{moment(item.modified).format('MMMM Do YYYY')}</p>
+									</div>
 
 									{/* description */}
 									{item.description && (

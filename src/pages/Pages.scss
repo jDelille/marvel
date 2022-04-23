@@ -52,7 +52,7 @@
 		gap: 0.75rem;
 		cursor: pointer;
 		text-transform: uppercase;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 	.down-arrow {
 		font-size: 1.2rem;
@@ -79,6 +79,8 @@
 	display: grid;
 	grid-template-columns: var(--grid);
 	padding-top: 2rem;
+	justify-items: center;
+	gap: 1rem;
 }
 
 .grid-container-reverse {
@@ -86,4 +88,5 @@
 	display: grid;
 	grid-template-columns: var(--grid);
 	padding-top: 2rem;
+	gap: 1rem;
 }

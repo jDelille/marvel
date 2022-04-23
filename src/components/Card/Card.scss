@@ -4,8 +4,13 @@
 	height: 100%;
 	margin: 1rem 0;
 	@include card();
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
 	.comic-img {
-		max-height: 330px;
+		width: 100%;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 		transition: all 0.17s ease-in-out;
 
@@ -13,6 +18,11 @@
 			transform: translate(0, -10px);
 			cursor: pointer;
 		}
+	}
+	.comic-title {
+		width: 100%;
+		margin-top: 1rem;
+		text-transform: none;
 	}
 	.movie-img {
 		max-width: 210px;

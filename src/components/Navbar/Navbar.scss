@@ -14,7 +14,7 @@ nav {
 		font-size: 2rem;
 	}
 	.nav-content {
-		background-color: #202020;
+		background-color: var(--primary-dark);
 		position: absolute;
 		z-index: 9999;
 		width: 100%;
@@ -52,11 +52,11 @@ nav {
 				color: black;
 				text-decoration: none;
 				&:hover {
-					color: rgb(225, 73, 73);
+					color: var(--marvel-red);
 				}
 			}
 			.label {
-				color: rgb(225, 73, 73);
+				color: var(--marvel-red);
 			}
 		}
 		.container {
@@ -78,12 +78,14 @@ nav {
 				gap: 1rem;
 				justify-content: center;
 				padding: 1rem;
-
+				.latest-img {
+				}
 				img {
-					width: 140px;
+					max-height: 220px;
 				}
 				p {
 					font-weight: bold;
+					padding: 0;
 				}
 			}
 		}
@@ -100,13 +102,16 @@ nav {
 
 .sub-nav {
 	width: 100%;
-	background-color: #202020;
+	background-color: var(--primary-dark);
 	border-top: 1px solid lightgray;
 	color: white;
 	display: flex;
 	justify-content: center;
 	height: 55px;
 	z-index: 9999;
+	.burger {
+		display: none;
+	}
 	.links {
 		color: white;
 		display: flex;
@@ -129,7 +134,7 @@ nav {
 			&:after {
 				content: '';
 				height: 3px;
-				background-color: red;
+				background-color: var(--marvel-red);
 				position: absolute;
 				bottom: 0;
 				width: 100%;
@@ -138,5 +143,87 @@ nav {
 		.no-underline {
 			border: none;
 		}
+	}
+}
+
+.sub-menu {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--primary-dark);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	transition: var(--nav-transition);
+	padding: 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	.controls {
+		padding-bottom: 1rem 0;
+	}
+	.sub-links {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		.popular-label {
+			color: rgb(228, 193, 54);
+		}
+		a,
+		p {
+			height: 50px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+			font-size: 1.2rem;
+			font-weight: bold;
+			display: flex;
+			justify-content: space-between;
+			span {
+				color: var(--marvel-red);
+			}
+		}
+		p {
+			color: var(--marvel-red);
+			font-size: 1rem;
+		}
+	}
+}
+
+.sub-menu-movies {
+	.sub-links {
+		display: flex;
+		flex-direction: column-reverse;
+		a {
+			color: rgb(255, 254, 254);
+			font-size: 1.1rem;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	nav {
+		height: 55px;
+
+		.nav-content {
+			display: flex;
+			.logo {
+				position: absolute;
+			}
+
+			.burger {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				color: rgb(255, 255, 255);
+				font-size: 1.8rem;
+				margin-right: auto;
+				padding-left: 1rem;
+			}
+		}
+	}
+	.sub-nav {
+		display: none;
 	}
 }
