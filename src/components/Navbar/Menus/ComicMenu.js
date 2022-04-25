@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Card from '../../Card/Card';
+import ComicCard from './ComicCard';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -32,7 +32,7 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 			setLoading(true);
 			try {
 				const response = await axios.get(
-					`http://gateway.marvel.com/v1/public/comics?format=comic&formatType=comic&noVariants=true&dateDescriptor=thisWeek&orderBy=title&ts=${ts}&apikey=${apiKey}&hash=${hash}`
+					`https://gateway.marvel.com/v1/public/comics?format=comic&formatType=comic&noVariants=true&dateDescriptor=thisWeek&orderBy=title&ts=${ts}&apikey=${apiKey}&hash=${hash}`
 				);
 				setLatest(response.data.data.results);
 			} catch (error) {
@@ -45,11 +45,11 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 
 	// endpoints
 	let allComics = `/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
-	let latestComics = `/comics?dateDescriptor=thisWeek&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
-	let upcommingComics = `/comics?dateDescriptor=nextWeek&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
-	let avengers = `/comics?titleStartsWith=Avengers&startYear=${getDate}&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
-	let digital = `/comics?format=digital%20comic&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
-	let infinite = `/comics?format=infinite%20comic&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
+	let latestComics = `/comics?noVariants=true&dateDescriptor=thisWeek&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
+	let upcommingComics = `/comics?noVariants=true&dateDescriptor=nextWeek&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
+	let avengers = `/comics?noVariants=true&offset=50&titleStartsWith=Avengers&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
+	let digital = `/comics?noVariants=true&format=digital%20comic&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
+	let infinite = `/comics?noVariants=true&format=infinite%20comic&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
 
 	let thor = `/characters/1009664/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
 	let ironman = `/characters/1009368/comics?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
@@ -110,7 +110,9 @@ const ComicMenu = ({ menu, setMenu, close }) => {
 				<div className='display-comics'>
 					{latest.map((item, index) => {
 						if (index <= 5)
-							return <Card data={item} close={close} className='latest-img' />;
+							return (
+								<ComicCard data={item} close={close} className='latest-img' />
+							);
 					})}
 				</div>
 			</div>

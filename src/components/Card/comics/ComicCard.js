@@ -2,17 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { actionCreators } from '../../Redux';
-import './Card.scss';
+import { actionCreators } from '../../../Redux';
+import './ComicCard.scss';
 
-const Card = ({ data, close }) => {
+const ComicCard = ({ data, close }) => {
 	// import dispatch
 	const dispatch = useDispatch();
 	// import from action-creators.
 	const { updateComicId } = bindActionCreators(actionCreators, dispatch);
 
 	return (
-		<div className='card'>
+		<div className='comic-card'>
 			<Link to='/details'>
 				<img
 					onClick={() => {
@@ -24,10 +24,11 @@ const Card = ({ data, close }) => {
 					alt={data?.title}
 				/>
 			</Link>
-
-			<p className='comic-title'>{data.title}</p>
+			<div className='comic-info'>
+				<p className='comic-title'>{data.title}</p>
+			</div>
 		</div>
 	);
 };
 
-export default Card;
+export default ComicCard;

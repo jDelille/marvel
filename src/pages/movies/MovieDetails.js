@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { AiFillCaretRight } from 'react-icons/ai';
@@ -30,27 +30,24 @@ function MovieDetails() {
 	}
 
 	// show the next movie in MCU timeline
-
 	let next;
-
 	for (let i = 0; i < details.length; i++) {
 		if (details[i].chronology === overlay.chronology + 1) {
 			next = details[i];
 		}
 	}
 
-	console.log(next);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [details]);
 
 	return (
 		<>
 			<div className='movie-details page'>
 				<div className='control-bar'>
-					<Link to='/' className='back-btn'>
+					<Link to='/movies' className='back-btn'>
 						Back
 					</Link>
-					<a href='https://www.marvel.com/' target='_blank' rel='noreferrer'>
-						Go To Marvel.com
-					</a>
 				</div>
 				{/* <MovieOverlay details={overlay} /> */}
 				{details.map((item) => {
@@ -60,19 +57,28 @@ function MovieDetails() {
 								<div className='comic-content' key={item.id}>
 									<div className='top'>
 										<MovieOverlay details={overlay} />
-										<img className='comic-img-lg' src={item.logo} alt='' />
+										<img
+											className='comic-img-lg desktop'
+											src={item.logo}
+											alt=''
+										/>
+										<img
+											className='comic-img-lg mobile'
+											src={item.logo}
+											alt=''
+										/>
 									</div>
 									<div className='middle'>
 										<div className='left'>
-											<img src={item.poster_img} alt='' />
+											<img src={item.poster_img} className='desktop' alt='' />
 										</div>
 										<div className='right'>
 											<h1>{item.title}</h1>
-											<p>Release: {item.date}</p>
+											<p> {item.date}</p>
 											<p>Director: {item.director}</p>
 											<p>{item.description}</p>
 											<p className='next-movie'>
-												Next Movie in timeline
+												Next Movie
 												<span onClick={() => updateMovieId(movieId + 1)}>
 													{next?.title} <AiFillCaretRight className='arrow' />
 												</span>
@@ -83,7 +89,7 @@ function MovieDetails() {
 										<p>
 											Duration: <span>{item.duration} minutes</span>
 										</p>
-										<p>
+										<p className='desktop'>
 											Phase: <span>{item.phase}</span>
 										</p>
 										<p>
@@ -94,22 +100,12 @@ function MovieDetails() {
 										<h1> Trailer </h1>
 
 										<div className='player'>
-											<ReactPlayer
-												url={item.trailer}
-												width='70vw'
-												height='70vh'
-												controls={true}
-											/>
+											<ReactPlayer url={item.trailer} controls={true} />
 										</div>
 
 										<h1> Post Credit Scene </h1>
 										<div className='player'>
-											<ReactPlayer
-												url={item.post_credits}
-												width='70vw'
-												height='70vh'
-												controls={true}
-											/>
+											<ReactPlayer url={item.post_credits} controls={true} />
 										</div>
 									</div>
 								</div>

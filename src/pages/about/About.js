@@ -30,11 +30,9 @@ const About = () => {
 				</p>
 				<h1> Stay Updated </h1>
 				<p>
-					View the Github repo for this project to see the code and stay updated
-					on the changed made to the website. Also, if you would like to
-					collaborate on this with me or have any questions about the Marvel
-					api, feel free to reach out to me. You'll find all my information on
-					my Github account.
+					This website is a work in progress. I will try to roll out the new
+					features as soon as possible. Stay updated by viewing the Github repo
+					for this project. Link down below.
 				</p>
 				<p>
 					Github:{' '}

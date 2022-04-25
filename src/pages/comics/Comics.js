@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../../Components/Card/Card';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 import '../Pages.scss';
 import Loading from '../../Components/Loader/Loading';
+import ComicCard from '../../Components/Card/comics/ComicCard';
 
 const Comics = () => {
 	// state
@@ -20,7 +20,7 @@ const Comics = () => {
 			setLoading(true);
 			try {
 				const response = await axios.get(
-					`http://gateway.marvel.com/v1/public${getComics}`
+					`https://gateway.marvel.com/v1/public${getComics}`
 				);
 				setData(response.data.data.results);
 			} catch (error) {
@@ -31,11 +31,9 @@ const Comics = () => {
 		fetchComics();
 	}, [getComics]);
 
-	console.log(data);
-
 	return (
 		<div className='page'>
-			<div className='title'>{!loading && <h1> {category}: Comics</h1>}</div>
+			<div className='title'>{!loading && <h1> {category}</h1>}</div>
 			<div className='grid-container'>
 				{loading ? (
 					<Loading loading={loading} />
@@ -45,7 +43,7 @@ const Comics = () => {
 							item.thumbnail.path !==
 							'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available'
 						)
-							return <Card data={item} />;
+							return <ComicCard data={item} />;
 					})
 				)}
 			</div>

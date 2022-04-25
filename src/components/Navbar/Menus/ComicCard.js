@@ -5,21 +5,23 @@ import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../../Redux';
 import './Card.scss';
 
-const MovieCard = ({ data, close }) => {
+const ComicCard = ({ data, close }) => {
+	// import dispatch
 	const dispatch = useDispatch();
-	const { updateMovieId } = bindActionCreators(actionCreators, dispatch);
+	// import from action-creators.
+	const { updateComicId } = bindActionCreators(actionCreators, dispatch);
 
 	return (
 		<div className='menu-card'>
-			<Link to='/movie_details'>
+			<Link to='/details'>
 				<img
-					className='img'
 					onClick={() => {
-						updateMovieId(data.id);
+						updateComicId(data.id);
 						close();
 					}}
-					src={data.poster_img}
-					alt=''
+					className='img'
+					src={`${data?.thumbnail?.path}.${data?.thumbnail?.extension}`}
+					alt={data?.title}
 				/>
 			</Link>
 			<div className='menu-card-info'>
@@ -29,4 +31,4 @@ const MovieCard = ({ data, close }) => {
 	);
 };
 
-export default MovieCard;
+export default ComicCard;

@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../../Redux';
-import './Card.scss';
+import './MovieCard.scss';
 
 const MovieCard = ({ data, close }) => {
 	const dispatch = useDispatch();
 	const { updateMovieId } = bindActionCreators(actionCreators, dispatch);
 
 	return (
-		<div className='menu-card'>
+		<div className='card'>
 			<Link to='/movie_details'>
 				<img
 					className='img'
@@ -22,8 +22,8 @@ const MovieCard = ({ data, close }) => {
 					alt=''
 				/>
 			</Link>
-			<div className='menu-card-info'>
-				<p className='card-title'>{data.title}</p>
+			<div className='info'>
+				<p className='title'>{data.title}</p>
 			</div>
 		</div>
 	);

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Overlay from '../../Components/Overlay/Overlay';
 import { AiOutlineLeft } from 'react-icons/ai';
 import moment from 'moment';
-import { MdOutlineCopyAll } from 'react-icons/md';
-import '../../Styles//Details.scss';
+import './ComicDetails.scss';
+
 function Details() {
 	const [details, setDetails] = useState([]);
 
@@ -30,8 +30,6 @@ function Details() {
 		navigator.clipboard.writeText(text);
 	}
 
-	console.log(details);
-
 	return (
 		<>
 			<div className='details page'>
@@ -40,9 +38,6 @@ function Details() {
 						<AiOutlineLeft className='left-arrow' />
 						{category}
 					</Link>
-					<a href='https://www.marvel.com/' target='_blank' rel='noreferrer'>
-						Go To Marvel.com
-					</a>
 				</div>
 				{/* COMIC HEADER OVERLAY */}
 				<Overlay details={details} />
@@ -89,31 +84,9 @@ function Details() {
 										</div>
 									</div>
 
-									{/* comic extra info */}
-									<h2>
-										Search for this comic online:
-										<span>
-											{item.upc}
-											<MdOutlineCopyAll
-												className='copy-btn'
-												onClick={() => copyUPC(item.upc)}
-											/>
-										</span>
-									</h2>
-
 									{/* comic price */}
-									{item.prices.map((item) => {
-										return <h2>Price: ${item.price} </h2>;
-									})}
-
-									{/* marvel urls */}
-									{/* {item.urls.map((item) => {
-										return (
-											<a href={item.url} target='_blank' rel='noreferrer'>
-												{' '}
-												More Info{' '}
-											</a>
-										);
+									{/* {item.prices.map((item) => {
+										return <p>Price: ${item.price} </p>;
 									})} */}
 
 									{/* featured characters */}
@@ -134,24 +107,41 @@ function Details() {
 										<p>{moment(item.modified).format('MMMM Do YYYY')}</p>
 									</div>
 
+									{/* show price on mobile */}
+									<div className='price'>
+										{item.prices.map((item) => {
+											return item.price !== 0 ? (
+												<>
+													<h2>Price:</h2>
+													<p> ${item.price} </p>
+												</>
+											) : (
+												<>
+													<h2>Price:</h2>
+													<p>Unavailable </p>
+												</>
+											);
+										})}
+									</div>
+
 									{/* description */}
-									{item.description && (
-										<div className='description'>
+									<div className='description'>
+										{item.description ? (
 											<p>
 												{item.description
 													.replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, ' ')
 													.replace(/&rsquo;/gi, "'")}
 											</p>
-										</div>
-									)}
+										) : (
+											<p>No description available.</p>
+										)}
+									</div>
 								</div>
 							</div>
 						</>
 					);
 				})}
 			</div>
-			{/* SHOW RELATED COMICS */}
-			{/* <Related /> */}
 		</>
 	);
 }

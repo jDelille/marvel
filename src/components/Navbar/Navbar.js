@@ -24,9 +24,9 @@ const Navbar = () => {
 					<div className='burger'>
 						<FaBars onClick={() => setShowMobileMenu(true)} />
 					</div>
-					<div className='logo'>Marvel HQ</div>
+					<div className='logo'>Marvelverse</div>
 				</div>
-				(
+
 				<ComicMenu setMenu={setMenu} menu={menu} close={close} />
 				<MovieMenu
 					setMovieMenu={setMovieMenu}

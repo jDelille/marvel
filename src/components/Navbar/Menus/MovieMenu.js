@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import data from '../../db.json';
 import MovieCard from './MovieCard';
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../../Redux';
 

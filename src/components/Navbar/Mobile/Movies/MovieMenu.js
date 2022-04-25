@@ -10,10 +10,7 @@ const MovieMenu = ({ movieMenu, setMovieMenu, setShowMobileMenu }) => {
 	// import dispatch
 	const dispatch = useDispatch();
 	// import from action-creators.
-	const { updateComicEndpoint, updateCategory } = bindActionCreators(
-		actionCreators,
-		dispatch
-	);
+	const { updateMovieId } = bindActionCreators(actionCreators, dispatch);
 
 	// latest movies
 	const latest = [
@@ -21,6 +18,21 @@ const MovieMenu = ({ movieMenu, setMovieMenu, setShowMobileMenu }) => {
 		'Spider-Man: No Way Home',
 		'Doctor Strange in the Multiverse of Madness',
 		'Thor: Love and Thunder',
+	];
+
+	const trending = [
+		{
+			id: 26,
+			title: 'Spider-Man: No Way Home',
+		},
+		{
+			id: 27,
+			title: 'Doctor Strange in the Multiverse of Madness',
+		},
+		{
+			id: 28,
+			title: 'Thor: Love and Thunder',
+		},
 	];
 
 	// close btn for nav menu
@@ -43,14 +55,15 @@ const MovieMenu = ({ movieMenu, setMovieMenu, setShowMobileMenu }) => {
 				<Link to='movies' onClick={() => close()}>
 					See all movies
 				</Link>
-				{latest.map((item) => {
+				{trending.map((item) => {
 					return (
 						<Link
-							to='/'
+							to='movie_details'
 							onClick={() => {
+								updateMovieId(item.id);
 								close();
 							}}>
-							{item}
+							{item.title}
 						</Link>
 					);
 				})}

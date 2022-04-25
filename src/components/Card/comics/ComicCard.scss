@@ -1,15 +1,12 @@
-@import '../../../styles/mixins.scss';
-
-.menu-card {
+.comic-card {
 	margin: 1rem 0;
-	@include card();
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 230px;
-	max-height: 230px;
-	img {
+	max-width: 230px;
+	.comic-img {
+		max-width: 100%;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 		transition: all 0.17s ease-in-out;
 		&:hover {
@@ -17,10 +14,20 @@
 			cursor: pointer;
 		}
 	}
-	.menu-card-info {
+
+	.comic-info {
 		width: 100%;
-		.card-title {
-			font-size: 0.8rem;
+		.comic-title {
+			font-size: 1rem;
+			font-weight: lighter;
+			text-transform: none;
+			margin-top: 1rem;
 		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.card {
+		max-width: 160px;
 	}
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import MovieCard from '../../Components/Navbar/Menus/MovieCard';
+import MovieCard from '../../Components/Card/movies/MovieCard';
 import axios from 'axios';
 import '../Pages.scss';
 import Loading from '../../Components/Loader/Loading';
@@ -28,9 +28,7 @@ const Movies = () => {
 	return (
 		<>
 			<div className='page'>
-				<div className='header'>
-					<h1> Movies </h1>
-				</div>
+				<div className='header'>{!loading && <h1> Movies </h1>}</div>
 				<div className='grid-container-reverse'>
 					{loading ? (
 						<Loading loading={loading} />
