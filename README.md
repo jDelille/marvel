@@ -53,7 +53,7 @@ npm start
   
   Finally, copy and pate your public key in the .env file and you should be all set!
   
-  For more information, head over to https://developer.marvel.com/documentation/authorization for more details.
+  For more information, head over to https://developer.marvel.com/documentation/authorization.
 
 
 
