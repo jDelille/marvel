@@ -20,11 +20,42 @@ First, install the dependencies:
 ```
 npm install
 ```
+
+Add the .env file in the root directory: 
+
+```
+REACT_APP_TIMESTAMP=(your timestamp)
+REACT_APP_HASH=(md5 hash)
+REACT_APP_API_KEY=(your private api key)
+```
+
 To start the development server:
 
 ```
 npm start
 ```
+
+# Need help with the Marvel api key?
+ To get the unique timestamp run this piece of code:
+ ````javascript
+	const timestamp = new Date().getTime();
+	console.log(timestamp);
+  ````
+  Copy the logged timestamp and paste it in the .env file and then head over to https://www.md5hashgenerator.com/
+  
+  In md5hashgenerator, paste your logged timestamp in the textarea.
+  
+  Next, if you have already created an account for the Marvel developer portal, head over to this link https://developer.marvel.com/account to get your private and public keys.
+ 
+  Copy your private key and paste it right after the timestamp in the md5 textarea and then copy and paste your public key right after the private one. 
+  The format should be => timestampprivatekeypublickey.
+  Hit the generate button to create your unique hash and copy and paste the md5 hash into the .env file. 
+  
+  Finally, copy and pate your public key in the .env file and you should be all set!
+  
+  For more information, head over to https://developer.marvel.com/documentation/authorization for more details.
+
+
 
 
 # Features
