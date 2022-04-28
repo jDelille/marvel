@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Overlay from '../../Components/Overlay/Overlay';
+import Overlay from '../../components/Overlay/Overlay';
 import { AiOutlineLeft } from 'react-icons/ai';
 import moment from 'moment';
 import './ComicDetails.scss';

@@ -1,5 +1,5 @@
 import RouterDOM from './Router';
-import './Styles/App.scss';
+import './styles/App.scss';
 
 function App() {
 	return (

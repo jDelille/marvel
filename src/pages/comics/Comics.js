@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 import '../Pages.scss';
-import Loading from '../../Components/Loader/Loading';
-import ComicCard from '../../Components/Card/comics/ComicCard';
+import Loading from '../../components/Loader/Loading';
+import ComicCard from '../../components/Card/comics/ComicCard';
 
 const Comics = () => {
 	// state

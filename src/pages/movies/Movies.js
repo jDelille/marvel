@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import MovieCard from '../../Components/Card/movies/MovieCard';
+import MovieCard from '../../components/Card/movies/MovieCard';
 import axios from 'axios';
 import '../Pages.scss';
-import Loading from '../../Components/Loader/Loading';
+import Loading from '../../components/Loader/Loading';
 
 const Movies = () => {
 	const [data, setData] = useState([]);

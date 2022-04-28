@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Comics from './Pages/comics/Comics';
-import Details from './Pages/comics/ComicDetails';
-import Navbar from './Components/Navbar/Navbar';
-import MovieDetails from './Pages/movies/MovieDetails';
-import Movies from './Pages/movies/Movies';
-import About from './Pages/about/About';
+import Comics from './pages/comics/Comics';
+import Details from './pages/comics/ComicDetails';
+import Navbar from './components/Navbar/Navbar';
+import MovieDetails from './pages/movies/MovieDetails';
+import Movies from './pages/movies/Movies';
+import About from './pages/about/About';
 function RouterDOM() {
 	return (
 		<Router>
