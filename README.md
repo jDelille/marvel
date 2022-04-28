@@ -9,6 +9,24 @@ Marvelverse is a website where you can view Marvel comics, movies, and their det
 
 ![Screenshot 2022-04-28 101630](https://user-images.githubusercontent.com/84540947/165809511-752af1de-c42c-476e-84e7-6a2952aa9734.png)
 
+# Getting Started
+
+If you want to clone the code locally on your machine: You must insert your own .env file into the project. 
+
+The marvel api needs a specific user api key in order to work and this can be obtained by going to https://developer.marvel.com/ and signing up. 
+
+First, install the dependencies: 
+
+```
+npm install
+```
+To start the development server:
+
+```
+npm start
+```
+
+
 # Features
 View comic books for different MCU heros as well as other comics written by Marvel such as Alien, Conan, Star Wara, etc. You can check out all the movies in the MCU and view details for each which include, description, chronology, trailer, and a post-credit scene. The site is mobile responsive and works smoothly on all devices.
 
@@ -21,3 +39,5 @@ This website is built with JavaScript, React, and SCSS.
 # API
 - Comics api = https://gateway.marvel.com/v1/public/comics
 - Movies api = https://rvel-mcu-api.herokuapp.com/movies 
+
+
